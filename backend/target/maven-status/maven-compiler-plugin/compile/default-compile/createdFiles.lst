@@ -1,0 +1,5 @@
+com/cmsysadm/backend/controller/UsuarioController.class
+com/cmsysadm/backend/entity/Usuario.class
+com/cmsysadm/backend/service/UsuarioService.class
+com/cmsysadm/backend/BackendApplication.class
+com/cmsysadm/backend/repository/UsuarioRepository.class

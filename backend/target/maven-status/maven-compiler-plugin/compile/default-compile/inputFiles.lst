@@ -1,0 +1,5 @@
+/home/ecarfilaf/Documents/Projects/Java/cm-sysadm-app-java-ang/backend/src/main/java/com/cmsysadm/backend/BackendApplication.java
+/home/ecarfilaf/Documents/Projects/Java/cm-sysadm-app-java-ang/backend/src/main/java/com/cmsysadm/backend/controller/UsuarioController.java
+/home/ecarfilaf/Documents/Projects/Java/cm-sysadm-app-java-ang/backend/src/main/java/com/cmsysadm/backend/entity/Usuario.java
+/home/ecarfilaf/Documents/Projects/Java/cm-sysadm-app-java-ang/backend/src/main/java/com/cmsysadm/backend/repository/UsuarioRepository.java
+/home/ecarfilaf/Documents/Projects/Java/cm-sysadm-app-java-ang/backend/src/main/java/com/cmsysadm/backend/service/UsuarioService.java
