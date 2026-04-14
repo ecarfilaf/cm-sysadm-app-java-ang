@@ -8,6 +8,7 @@ For further reference, please consider the following sections:
 * [Create an OCI image](https://docs.spring.io/spring-boot/4.0.5/maven-plugin/build-image.html)
 * [Spring Data JPA](https://docs.spring.io/spring-boot/4.0.5/reference/data/sql.html#data.sql.jpa-and-spring-data)
 * [Spring Web](https://docs.spring.io/spring-boot/4.0.5/reference/web/servlet.html)
+* [Spring Boot DevTools](https://docs.spring.io/spring-boot/4.0.5/reference/using/devtools.html)
 
 ### Guides
 The following guides illustrate how to use some features concretely:
