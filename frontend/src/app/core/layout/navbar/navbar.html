@@ -1,0 +1,59 @@
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Dashboard</span>
+
+    <span class="navbar-spacer"></span>
+    <button mat-icon-button>
+      <mat-icon class="navbar-icon" matBadge="15">mail</mat-icon>
+    </button>
+    
+    <button mat-icon-button>
+      <mat-icon class="navbar-icon" matBadge="+99">notifications</mat-icon>
+    </button>
+
+    @if(usrTheme === 'dark'){
+      <button mat-icon-button (click)="usrTheme = 'light'; onThemeToggle()">
+        <mat-icon class="navbar-icon">sunny</mat-icon>
+      </button>
+    } @else {
+      <button mat-icon-button (click)="usrTheme = 'dark'; onThemeToggle()">
+        <mat-icon class="navbar-icon">dark_mode</mat-icon>
+      </button>
+    }
+
+    @if (isLoggedIn) {
+      <button mat-icon-button [matMenuTriggerFor]="usermenu" >
+          <mat-icon class="navbar-icon">account_circle</mat-icon>
+      </button>
+      <mat-menu #usermenu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>manage_accounts</mat-icon>
+          <span>Profile</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>settings</mat-icon>
+          <span>Settings</span>
+        </button>
+        <button mat-menu-item (click)="logout()">
+          <mat-icon>logout</mat-icon>
+          <span>Logout</span>
+        </button>
+      </mat-menu>
+
+    }
+    @else {
+      <button mat-icon-button [matMenuTriggerFor]="usermenu" >
+          <mat-icon class="navbar-icon">account_circle</mat-icon>
+      </button>
+      <mat-menu #usermenu="matMenu">
+        <button mat-menu-item (click)="login()">
+          <mat-icon>login</mat-icon>
+          <span>Login</span>
+        </button>
+      </mat-menu>
+    }
+    <!-- <mat-icon class="navbar-icon">handyman</mat-icon>
+    <mat-icon class="navbar-icon">question_mark</mat-icon> -->
+  </mat-toolbar-row>
+</mat-toolbar>

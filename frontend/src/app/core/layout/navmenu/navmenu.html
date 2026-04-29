@@ -1,0 +1,36 @@
+    <mat-nav-list>
+    @for (item of navItems; track item.label) {
+      @if (item.children) {
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                <mat-icon>{{item.icon}}</mat-icon>
+                <span style="padding: 10px 15px;">{{item.label}}</span>
+            </mat-panel-title>
+            <mat-panel-description>
+              <!-- Currently I am {{panelOpenState() ? 'open' : 'closed'}} -->
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          @for (child of item.children; track child.label) {
+            <a [routerLink]="child.route"
+              routerLinkActive="active"
+              class="nav-item">
+              <mat-icon>{{child.icon}}</mat-icon>
+              <span>{{child.label}}</span>
+            </a>
+          }
+        </mat-expansion-panel>
+      }
+      @else {
+      <a [routerLink]="item.route"
+        routerLinkActive="active"
+        class="nav-item">
+        <mat-icon>{{item.icon}}</mat-icon>
+        <span>{{item.label}}</span>
+        
+        @if (item.badge) {
+        }
+      </a>
+      }
+    }
+    </mat-nav-list>

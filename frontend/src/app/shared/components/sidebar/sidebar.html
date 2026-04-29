@@ -1,0 +1,22 @@
+<aside class="sidebar">
+  <div class="logo">
+    <mat-icon>layers</mat-icon>
+    <span>Dashboard</span>
+  </div>
+
+  <p class="nav-label">Navigation</p>
+  <nav>
+    @for (item of navItems; track item.label) {
+      <a [routerLink]="item.route"
+        routerLinkActive="active"
+        class="nav-item">
+        <mat-icon>{{item.icon}}</mat-icon>
+        <span>{{item.label}}</span>
+        
+        @if (item.badge) {
+          <span class="badge">{{item.badge}}</span>
+        }
+      </a>
+    }
+  </nav>
+</aside>

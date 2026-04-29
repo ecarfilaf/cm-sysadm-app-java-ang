@@ -1,0 +1,60 @@
+<div class="dashboard-layout">
+  <!-- <app-sidebar></app-sidebar> -->
+
+  <div class="main">
+    <!-- <app-topbar></app-topbar> -->
+
+    <div class="content">
+      <h1>Dashboard</h1>
+
+      <!-- Welcome + Stat Cards -->
+      <div class="stats-row">
+        <div class="welcome-card card">
+          <table>
+            <tr>
+              <td>
+                <div>
+                  <h2>Welcome back, Chris!</h2>
+                  <p>Dashboard</p>
+                </div>
+              </td>
+              <td>
+                <div class="align-self-end text-end col-2">
+                  <img src="imgs/customer-support.png" alt="Customer Support" class="img-fluid illustration-img">
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <app-stat-card
+          prefix="$ " [value]="24300"
+          label="Total Earnings" [delta]="5.35"
+          icon="attach_money">
+        </app-stat-card>
+        <app-stat-card
+          [value]="43"
+          label="Pending Orders" [delta]="-4.25"
+          icon="inventory_2">
+        </app-stat-card>
+        <app-stat-card
+          prefix="$ " [value]="18700"
+          label="Total Revenue" [delta]="8.65"
+          icon="attach_money">
+        </app-stat-card>
+      </div>
+
+      <!-- Chart Row -->
+      <div class="chart-row">
+        <!-- <app-sales-chart></app-sales-chart>
+        <app-daily-feed></app-daily-feed> -->
+      </div>
+
+      <!-- Bottom Row -->
+      <div class="bottom-row">
+        <!-- <app-calendar-widget></app-calendar-widget>
+        <app-weekly-sales></app-weekly-sales>
+        <app-appointments></app-appointments> -->
+      </div>
+    </div>
+  </div>
+</div>

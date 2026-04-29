@@ -1,0 +1,29 @@
+.nav-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 20px;
+  // color: var(--sidebar-text);
+  text-decoration: none; font-size: 14px;
+  border-left: 3px solid transparent;
+  transition: all 0.2s;
+
+  &:hover, &.active {
+    color: var(--sidebar-active);
+    // background: rgba(255,255,255,0.06);
+    border-left-color: var(--accent-blue);
+  }
+}
+
+.nav-label {
+  font-size: 11px; letter-spacing: 2px;
+  text-transform: uppercase;
+  // color: var(--sidebar-text);
+  padding: 0 20px 8px;
+}
+
+.badge {
+  margin-left: auto;
+  background: var(--accent-blue);
+  // color: #fff; 
+  font-size: 11px;
+  padding: 2px 8px; border-radius: 99px;
+}

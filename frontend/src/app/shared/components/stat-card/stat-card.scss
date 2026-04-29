@@ -1,0 +1,21 @@
+.stat-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+  padding: 24px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.amount { font-size: 28px; font-weight: 700; color: var(--text-primary); }
+.label  { font-size: 13px; color: var(--text-muted); margin: 4px 0 8px; }
+.delta {
+  font-size: 12px; font-weight: 600;
+  padding: 3px 8px; border-radius: 99px;
+  &.up   { background: #dcfce7; color: var(--green); }
+  &.down { background: #fee2e2; color: var(--red); }
+}
+.icon-wrap {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #eff6ff;
+  display: flex; align-items: center; justify-content: center;
+  mat-icon { color: var(--accent-blue); font-size: 26px; }
+}
